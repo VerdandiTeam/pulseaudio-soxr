@@ -73,6 +73,9 @@ Requires:  %{name} = %{version}-%{release}
 Man pages for %{name}.
 
 %prep
+cd /home/abuild/rpmbuild/BUILD
+/usr/bin/xz -dc /home/abuild/rpmbuild/SOURCES/pulseaudio-14.2+master.20220530115900.6d76d95.tar.xz
+/bin/tar -xof -
 ls -laR /home/abuild/rpmbuild/BUILD
 %setup -q -n %{name}-%{version}
 
