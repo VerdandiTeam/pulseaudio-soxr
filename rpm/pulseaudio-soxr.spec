@@ -1,6 +1,7 @@
 Name:       pulseaudio
 
 %define pulseversion 14.2
+%define pulserelease 14.2+git7
 
 Summary:    General purpose sound server
 Version:    %{pulseversion}
@@ -73,7 +74,7 @@ Requires:  %{name} = %{version}-%{release}
 Man pages for %{name}.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{pulserelease}
 
 %build
 echo "%{version}" > .tarball-version
