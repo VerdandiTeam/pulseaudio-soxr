@@ -73,6 +73,7 @@ Requires:  %{name} = %{version}-%{release}
 Man pages for %{name}.
 
 %prep
+ls -laR
 %setup -q -n %{name}-%{version}
 
 %build
