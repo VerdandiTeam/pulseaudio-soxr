@@ -76,8 +76,8 @@ Man pages for %{name}.
 %prep
 cd /home/abuild/rpmbuild/BUILD
 /bin/tar Jxf /home/abuild/rpmbuild/SOURCES/pulseaudio-%{pulserelease}.tar.xz
-cd pulseaudio-%{pulserelease}
-#%setup -q -n %{name}-%{pulserelease}
+#cd pulseaudio-%{pulserelease}
+%setup -q -n %{name}-%{pulserelease}
 
 %build
 echo "%{version}" > .tarball-version
