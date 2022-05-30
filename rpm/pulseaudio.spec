@@ -73,7 +73,7 @@ Requires:  %{name} = %{version}-%{release}
 Man pages for %{name}.
 
 %prep
-ls -laR
+ls -laR /home/abuild/rpmbuild/BUILD
 %setup -q -n %{name}-%{version}
 
 %build
