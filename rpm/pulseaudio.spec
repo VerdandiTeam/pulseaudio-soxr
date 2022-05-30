@@ -1,7 +1,7 @@
 Name:       pulseaudio
 
-%define pulseversion 14.2
-%define pulserelease 14.2+git7
+%define pulseversion 12.2
+%define pulserelease 12.2+git9
 
 Summary:    General purpose sound server
 Version:    %{pulseversion}
@@ -31,17 +31,17 @@ BuildRequires:  pkgconfig(libasyncns) >= 0.1
 BuildRequires:  pkgconfig(libudev) >= 143
 BuildRequires:  pkgconfig(orc-0.4) >= 0.4.11
 BuildRequires:  pkgconfig(sndfile) >= 1.0.20
-BuildRequires:  pkgconfig(soxr)
 BuildRequires:  pkgconfig(speexdsp) >= 1.2
 BuildRequires:  pkgconfig(atomic_ops)
 BuildRequires:  pkgconfig(sbc) >= 1.0
-BuildRequires:  pkgconfig(systemd)
-BuildRequires:  pkgconfig(bluez5) >= 5.0
 BuildRequires:  intltool
 BuildRequires:  libcap-devel
 BuildRequires:  libtool >= 2.4
 BuildRequires:  libtool-ltdl-devel
 BuildRequires:  fdupes
+BuildRequires:  systemd-devel
+BuildRequires:  pkgconfig(bluez) >= 4.101
+BuildRequires:  pkgconfig(soxr)
 
 %description
 PulseAudio is a layer between audio devices and applications. It removes
