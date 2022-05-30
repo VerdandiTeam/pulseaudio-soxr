@@ -74,8 +74,7 @@ Man pages for %{name}.
 
 %prep
 cd /home/abuild/rpmbuild/BUILD
-/usr/bin/xz -dc /home/abuild/rpmbuild/SOURCES/%{name}-%{version}.tar.xz
-/bin/tar -xof -
+/bin/tar Jxf /home/abuild/rpmbuild/SOURCES/%{name}-%{version}.tar.xz
 ls -laR /home/abuild/rpmbuild/BUILD
 %setup -q -n %{name}-%{version}
 
