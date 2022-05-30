@@ -73,9 +73,6 @@ Requires:  %{name} = %{version}-%{release}
 Man pages for %{name}.
 
 %prep
-cd /home/abuild/rpmbuild/BUILD
-/bin/tar Jxf /home/abuild/rpmbuild/SOURCES/%{name}-*tar.xz
-ls -laR /home/abuild/rpmbuild/BUILD
 %setup -q -n %{name}-%{version}
 
 %build
